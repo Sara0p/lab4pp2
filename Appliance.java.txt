@@ -1,0 +1,44 @@
+package home;
+import java.util.Scanner;
+
+
+
+public class Appliance {
+    private int id;
+    private boolean status;
+    
+    
+    public Appliance (){
+     id = 0;
+     status =false;
+    }
+     public Appliance (int m){
+      id = m;
+      status =false;
+      }
+    
+    public int getId(){
+        return id;
+    }
+    public void setId(int i){
+        id=i;
+    }
+    public boolean getStatus(){
+        return status;
+    }
+    public void setStatus(boolean s){
+        status=s;
+    }
+    
+    public void printStatus(){
+     if (status){
+         System.out.println("turned ON");
+     }   
+       else {
+        System.out.println("turned Off");
+
+    }
+        
+    }   
+   
+}
